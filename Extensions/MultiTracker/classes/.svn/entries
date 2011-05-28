@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="75"
+   name=""
+   committed-date="2007-11-15T12:21:13.459904Z"
+   url="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips/MultiTracker/classes"
+   last-author="falkenst"
+   kind="dir"
+   uuid="73e6543a-bbc6-4ead-975d-0d4c7f83c857"
+   repos="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips"
+   revision="75"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackerHelpCenter.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="74ed00030cdc66e1956c5ae81de999f5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._plusMultiTracker_resetSynthDefs.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="MultiTrackSoundFilePool.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="b43ba79f98490852b9ece41fb43bc67d"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTracker.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="priorityQueue_asPbind.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="0b2e0152760bcaaed97de19c6181b16c"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="MultiTrackSoundFile.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="4434052dd27de05f8fa939ef29c9be6f"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="1"
+   name="plusPatternStatic.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="ac135840b360a9f2553a1bbee0cde984"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._plusScorePattern.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._symbolIdentity.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackGui"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="178982ab06417dda486d88e2f0948a78"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="65"
+   name="MultiTrackTools.sc"
+   text-time="2007-11-09T10:47:56.000000Z"
+   committed-date="2007-11-09T09:24:17.346412Z"
+   checksum="f224eac239263986348774bcb74b6347"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-09T10:47:56.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackTrigger.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="c050d62d9e4a6cdd9d91d06d4158b61b"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._priorityQueue_asPbind.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="66"
+   name="MultiTrackSoundFilePlayer.sc"
+   text-time="2007-11-09T10:47:56.000000Z"
+   committed-date="2007-11-09T09:37:40.457325Z"
+   checksum="917a909b06d2a5d59869ce2b97888bba"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-09T10:47:56.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._plusPatternStatic.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="75"
+   name="MultiTracker.sc"
+   text-time="2007-11-15T12:22:29.000000Z"
+   committed-date="2007-11-15T12:21:13.459904Z"
+   checksum="f69c4e771abad69bad2ae142d9d710a7"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:22:29.000000Z"/>
+<entry
+   committed-rev="73"
+   name="MultiTrackerSelectionManager.sc"
+   text-time="2007-11-10T11:16:49.000000Z"
+   committed-date="2007-11-09T22:37:22.126376Z"
+   checksum="b79353229f554065b136f7b589d9ffcc"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-10T11:16:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrack_PlusSoundFile.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._plusAsMultiTrackObject.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="plusScorePattern.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="e75145c00e2f41e031550d915d871946"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="plusKeyCodeMultiTracker.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="1ed82ebd04406b84bde5cd535695c082"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="1"
+   name="symbolIdentity.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="73cbe19bc08afa1b79443b87bc1ea031"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   name="MultiTrackGui"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackTrigger.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackObject.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="plusSynthiMessage.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="8143f2490a219fd3a0213609329fa602"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="57"
+   name="MultiTrack_PlusSoundFile.sc"
+   text-time="2007-11-01T10:38:39.000000Z"
+   committed-date="2007-10-19T21:29:57.184799Z"
+   checksum="377fdd81bf2220bfa066a6e8700084f8"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-01T10:38:39.000000Z"/>
+<entry
+   committed-rev="1"
+   name="PlusEnv.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="a9562ddb553540a217d2bf55531d3692"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackerHelpCenter.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="plusAsMultiTrackObject.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="2de16fa8f15ea111440bc1b654c54619"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="63"
+   name="plusMultiTrackPlayer.sc"
+   text-time="2007-11-08T09:38:16.000000Z"
+   committed-date="2007-11-08T09:19:23.239301Z"
+   checksum="8a4bc089ffa8cba63476dd7f8fc337c2"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-08T09:38:16.000000Z"/>
+<entry
+   committed-rev="1"
+   name="plusMultiTracker_resetSynthDefs.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="2e70be35506ff133c6c8a05db695a37d"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._plusSynthiMessage.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="MultiTrackObject.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="4a62b08253cfa3c53650d966477c7ca3"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._PlusEnv.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._.DS_Store"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="96c68b79bc82b883258762468d5a38a3"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+</wc-entries>

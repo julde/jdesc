@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title></title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="824.48">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 11.0px 0.0px; font: 14.0px Lucida Grande; color: #544f83}
+p.p2 {margin: 0.0px 0.0px 16.0px 0.0px; font: 18.0px Lucida Grande}
+p.p3 {margin: 0.0px 0.0px 16.0px 0.0px; font: 13.0px Lucida Grande}
+p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px Lucida Grande}
+p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Monaco; color: #000000}
+p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Monaco; color: #000000; min-height: 14.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px Monaco; color: #bf0000}
+span.s1 {color: #0000bf}
+span.s2 {color: #606060}
+span.s3 {color: #007300}
+</style>
+</head>
+<body>
+<h2 style="margin: 0.0px 0.0px 11.0px 0.0px; font: 14.0px Lucida Grande; color: #544f83"><b>SwingOSC – Java-based GUI classes</b></h2>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 18.0px Lucida Grande"><b>JSCPeakMeter</b></h1>
+<p class="p3"><b>Warning: experimental stage, subject to changes!</b></p>
+<p class="p4">Note: please use the abstraction layer GUI.peakMeterView if possible! (see <a href="SC://GUI">GUI</a>). See also <a href="JSCView.html">JSCView</a>.</p>
+<p class="p5">s.boot;</p>
+<p class="p6"><br></p>
+<p class="p5">(</p>
+<p class="p5"><span class="Apple-converted-space">    </span>w = <span class="s1">JSCWindow</span>( <span class="s2">"Meter"</span>, <span class="s1">Rect</span>( 200, 200, 128, 225 ), <span class="s1">false</span> );</p>
+<p class="p5"><span class="Apple-converted-space">    </span>b = <span class="s1">JSCPeakMeter</span>( w, <span class="s1">Rect</span>( 4, 4, 56, 217 ));</p>
+<p class="p5"><span class="Apple-converted-space">    </span>b.bus = <span class="s1">Bus</span>( <span class="s3">\audio</span>, s.options.numOutputBusChannels, 2, s );</p>
+<p class="p5"><span class="Apple-converted-space">    </span>w.front;</p>
+<p class="p5">)</p>
+<p class="p6"><br></p>
+<p class="p5">b.border = <span class="s1">true</span>;</p>
+<p class="p5">b.border = <span class="s1">false</span>;</p>
+<p class="p5">b.caption = <span class="s1">true</span>;</p>
+<p class="p5">b.caption = <span class="s1">false</span>;</p>
+<p class="p5">b.caption = <span class="s1">true</span>;</p>
+<p class="p5">b.font = <span class="s1">JFont</span>( <span class="s2">"Eurostile"</span>, 11 );</p>
+<p class="p5">b.font = <span class="s1">JFont</span>( <span class="s2">"Andale Mono"</span>, 13 );</p>
+<p class="p5">b.captionVisible = <span class="s1">false</span>;</p>
+<p class="p5">b.captionVisible = <span class="s1">true</span>;</p>
+<p class="p5">b.captionPosition = <span class="s3">\right</span>;</p>
+<p class="p5">b.captionPosition = <span class="s3">\left</span>;</p>
+<p class="p5">b.captionPosition = <span class="s3">\center</span>;</p>
+<p class="p5">b.rmsPainted = <span class="s1">false</span>;</p>
+<p class="p5">b.rmsPainted = <span class="s1">true</span>;</p>
+<p class="p5">b.holdPainted = <span class="s1">false</span>;</p>
+<p class="p5">b.holdPainted = <span class="s1">true</span>;</p>
+<p class="p6"><br></p>
+<p class="p5">b.mouseDownAction = { <span class="s2">"Doing!"</span>.postln };</p>
+<p class="p6"><br></p>
+<p class="p5">b.active = <span class="s1">false</span>;</p>
+<p class="p5">b.active = <span class="s1">true</span>;</p>
+<p class="p6"><br></p>
+<p class="p6"><br></p>
+<p class="p7">// check the server metering:</p>
+<p class="p5"><span class="s1">JSCPeakMeter</span>.meterServer( s );</p>
+<p class="p6"><br></p>
+<p class="p5">x = { <span class="s1">Dust</span>.ar( 1 ! s.options.numOutputBusChannels ) * 0.7 }.play</p>
+<p class="p5">x.free;</p>
+<p class="p6"><br></p>
+<p class="p7">// WARNING:</p>
+<p class="p5">quitting scsynth while the meters are up are probably ending in confusing in this version. this needs to be fixed soon.</p>
+</body>
+</html>

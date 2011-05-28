@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title></title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.43">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #0018ea}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
+p.p5 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco; min-height: 12.0px}
+p.p6 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 12.0px Helvetica}
+p.p7 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 12.0px Helvetica; min-height: 14.0px}
+p.p8 {margin: 0.0px 0.0px 0.0px 85.0px; text-indent: -85.0px; font: 12.0px Helvetica}
+p.p9 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco; color: #5a2e2e}
+p.p10 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco}
+p.p11 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 14.0px Helvetica}
+p.p12 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco; color: #a91616}
+p.p13 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco; color: #6c2a2a}
+p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco}
+p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; min-height: 12.0px}
+p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #6c2a2a}
+p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #5a2e2e}
+p.p18 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 9.0px Monaco; color: #606060}
+p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #5c3333}
+p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #606060}
+span.s1 {font: 18.0px Helvetica}
+span.s2 {text-decoration: underline}
+span.s3 {text-decoration: underline ; color: #133cd6}
+span.s4 {color: #000000}
+span.s5 {color: #1433aa}
+span.s6 {color: #606060}
+span.s7 {color: #0014bc}
+span.s8 {font: 9.0px Monaco}
+span.s9 {font: 12.0px Helvetica; color: #000000}
+span.s10 {color: #0a2cb0}
+span.s11 {color: #616822}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>TouchOSC<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b></span><b>a convenient way to receive data from the TouchOSC app</b><span class="s1"><b><span class="Apple-tab-span">	</span></b></span></p>
+<p class="p2"><br></p>
+<p class="p1">TouchOSC is an iPhone / iPod Touch application by hexler that lets you send and receive Open Sound Control messages over a Wi-Fi network using the UDP protocol.</p>
+<p class="p3"><span class="s2"><a href="http://hexler.net/touchosc">http://hexler.net/touchosc</a></span></p>
+<p class="p2"><br></p>
+<p class="p1">The TouchOSC class sets up OSCResponders for each command sent by the TouchOSC app. The TouchOSC controller values are sent to individual control busses and can be accessed using the accelValue, layer1, layer2, layer3 and layer4 methods.</p>
+<p class="p2"><br></p>
+<p class="p1">Set up your iPhone/iPod Touch with the IP address of your computer and outgoing port = 57120<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p4"><b>Some Important Issues Regarding TouchOSC<span class="Apple-converted-space"> </span></b></p>
+<p class="p2"><br></p>
+<p class="p1">To use the TouchOSC GUI you will need to install the Knob and TabbedView Quarks. For further details see the <a href="Extending and Customizing SC/Quarks/Quarks.html"><span class="s3">Quarks</span></a> helpfile.</p>
+<p class="p2"><br></p>
+<p class="p4"><b>Creation / Class Methods</b></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>*new (server, interface, gui)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>server </b>- uses default server if nothing specified.</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>interface </b>- TouchOSC interface in use (string):</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"Beatmachine"</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"Keys"</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"Mix 16"</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"Mix 2"</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>"Simple"</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>gui </b>- <span class="Apple-tab-span">	</span>0 = no GUI</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>1 = use GUI</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// connect to TouchOSC app, no GUI</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>s.boot;</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x = <span class="s5">TouchOSC</span>.new(s,<span class="s6">"Beatmachine"</span>);</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p11"><b>Accessing Instance and Class Variables</b></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>accelerometer (on)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Enables input from the iPhone accelerometer.</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>on </b>- 1 = enable, 0 = disable</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// receive accelerometer input</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.accelerometer(1);</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// stop receiving</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.accelerometer(0);</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>accelX</b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>accelY</b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>accelZ</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Returns the bus indexes for the x,y &amp; z accelerometer data</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p12"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// use x &amp; y values</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>a = { <span class="s7">SinOsc</span>.ar( [ 200*<span class="s7">In</span>.kr(x.accelX,1), 400*<span class="s7">In</span>.kr(x.accelY,1) ] )}.play;</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>a.free;</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>layer1 (item)</b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>layer2 (item)</b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>layer3 (item)</b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>layer4 (item)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Returns the bus index for each controller on the specified layer. 2Dsliders use a 2-channel bus, the rest use 1 channel. The controllers on each layer are arranged by type then left-right position in the following order:</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p6"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>xy, fader, toggle, push, multifader, rotary, multitoggle</b></p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// use the 1st item on layer 1</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>a = {<span class="s5">SinOsc</span>.ar(440)*In.kr(x.layer1(0),1)}.play;</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>a.free;</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s8"><span class="Apple-tab-span">	</span></span><b>setIP (netAddr)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>For setting the IP address and port of your iPhone/iPod Touch.<span class="Apple-converted-space"> </span></p>
+<p class="p6"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>netAddr </b>- a NetAddr with the IP and port of your iPhone/iPod Touch</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p13"><span class="s9"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// set iPhone IP</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>n = <span class="s10">NetAddr</span>(<span class="s6">"169.254.238.28"</span>, 57130);</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.setIP(n);</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s8"><span class="Apple-tab-span">	</span></span><b>send (item, val1, val2)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Sends messages back to the TouchOSC app. val2 is only necessary for xy controllers.</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p13"><span class="s9"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// set the value for the 1st item on the current layer to "1"</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.send(0,1);</p>
+<p class="p5"><br></p>
+<p class="p6"><span class="s8"><span class="Apple-tab-span">	</span></span><b>sendLed (num, val)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Sends messages back to the LEDS on Beatmachine layer 2.</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p13"><span class="s9"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// turn 1st LED on</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.sendLed(1,1);</p>
+<p class="p5"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p13"><span class="s9"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// turn 1st LED off</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.sendLed(1,0);</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p13"><span class="s9"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// a routine to change the LED values in sequence</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>q = <span class="s10">Routine</span> {</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s10">inf</span>.do { <span class="s10">arg</span> i;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.sendLed((i % 16) + 1, 1);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>0.125.wait;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.sendLed((i % 16) + 1, 0);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>0.125.wait;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>};</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>};</p>
+<p class="p15"><br></p>
+<p class="p16"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// start the routine</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>t = <span class="s10">TempoClock</span>(1);</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>q.play(t);</p>
+<p class="p15"><br></p>
+<p class="p16"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// change the tempo</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>t.tempo_(2);</p>
+<p class="p16"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// stop the routine</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>q.stop;</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>t.stop;</p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>disconnect</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>stops receiving and removes all resources</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.disconnect;</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p11"><b>Using the GUI</b></p>
+<p class="p5"><br></p>
+<p class="p1">The GUI mirrors the values of the controllers on the TouchOSC app. It is possible to assign actions to each control, save them and recall them at a later date.</p>
+<p class="p2"><br></p>
+<p class="p17"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// connect to TouchOSC app, use GUI</p>
+<p class="p14"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x = <span class="s5">TouchOSC</span>.new(s,<span class="s6">"Beatmachine"</span>,1);</p>
+<p class="p5"><br></p>
+<p class="p7"><br></p>
+<p class="p7"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>guiAssign</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Enters assign mode. When you click on a control a window will pop up with a text field and assign button. Any function entered will become the new action for that control - the control is passed in as an argument.</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// enter edit mode</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.guiAssign;</p>
+<p class="p5"><br></p>
+<p class="p9"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>// click on a control, enter the following text &amp; press the assign button</p>
+<p class="p10"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>{ <span class="s5">arg</span> val; val.value.postln; }</p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>guiStore (path)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>Saves your assigned functions to a file.</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>path </b>- a String containing the path name of the file to save to.</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p18"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.guiStore(</span>"/Users/jason/Desktop/myGUI.txt"<span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span>guiRecall (path)</b></p>
+<p class="p7"><b><span class="Apple-tab-span">	</span></b></p>
+<p class="p6"><b><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b>recalls your saved functions</p>
+<p class="p8"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>path </b>- a String containing the path name of the file to open.</p>
+<p class="p7"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p18"><span class="s4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>x.guiRecall(</span>"/Users/jason/Desktop/myGUI.txt"<span class="s4">);</span></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p5"><br></p>
+<p class="p11"><b>Examples</b></p>
+<p class="p15"><br></p>
+<p class="p19">// using Mix 16 layer 1</p>
+<p class="p14">x = <span class="s5">TouchOSC</span>.new(s, <span class="s6">"Mix 16"</span>);</p>
+<p class="p15"><br></p>
+<p class="p17"><span class="s4">( </span>// some synthdefs to play with</p>
+<p class="p14"><span class="s5">SynthDef</span>(<span class="s6">"TouchOSC-Sines"</span>,{ <span class="s5">arg</span> freq, faderbus, togglebus;</p>
+<p class="p14"><span class="s5">var</span> sines, fader, toggle, vol;</p>
+<p class="p14">sines = <span class="s5">Pan2</span>.ar(<span class="s5">SinOsc</span>.ar(freq, mul:<span class="s5">Pulse</span>.ar(9.6,0.1)),<span class="s5">Lag</span>.kr(<span class="s5">LFNoise0</span>.kr(1),0.5));</p>
+<p class="p14">fader = <span class="s5">In</span>.kr(faderbus,1);</p>
+<p class="p14">toggle = <span class="s5">In</span>.kr(togglebus,1);</p>
+<p class="p14">vol = fader*toggle;</p>
+<p class="p14"><span class="s5">Out</span>.ar(0, sines*vol);</p>
+<p class="p14">}).send(s);</p>
+<p class="p15"><br></p>
+<p class="p14"><span class="s5">SynthDef</span>(<span class="s6">"TouchOSC-Raw"</span>,{ <span class="s5">arg</span> freq, faderbus, pushbus;</p>
+<p class="p14"><span class="s5">var</span> sounds, fader, push, vol, freqs;</p>
+<p class="p14">freqs = [freq,freq/2,freq/4];</p>
+<p class="p14">sounds = <span class="s5">Mix</span>.new([<span class="s5">SinOsc</span>.ar(freqs),<span class="s5">LFTri</span>.ar(freqs)]);</p>
+<p class="p14">fader = <span class="s5">In</span>.kr(faderbus,1);</p>
+<p class="p14">push = <span class="s5">In</span>.kr(pushbus,1);</p>
+<p class="p14">vol = fader*push;</p>
+<p class="p14"><span class="s5">Out</span>.ar(0, sounds*vol);</p>
+<p class="p14">}).send(s);</p>
+<p class="p15"><br></p>
+<p class="p20"><span class="s5">SynthDef</span><span class="s4">(</span>"TouchOSC-Dust"<span class="s4">,{ </span><span class="s5">arg</span><span class="s4"> xybus;</span></p>
+<p class="p14"><span class="s5">var</span> dust, freq, vol;</p>
+<p class="p14">vol = <span class="s5">In</span>.kr(xybus,1);</p>
+<p class="p14">freq = <span class="s5">In</span>.kr(xybus+1,1);</p>
+<p class="p14">dust = <span class="s5">Dust</span>.ar(50*freq,vol);</p>
+<p class="p14"><span class="s5">Out</span>.ar(0, dust);</p>
+<p class="p14">}).send(s);</p>
+<p class="p14">)</p>
+<p class="p15"><br></p>
+<p class="p17"><span class="s4">( </span>// create the Synths</p>
+<p class="p14">a = [</p>
+<p class="p17">// controlled by 1st fader and toggle</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Sines"</span>,[<span class="s11">\freq</span>,220,<span class="s11">\faderbus</span>,x.layer1(1),<span class="s11">\togglebus</span>,x.layer1(5)]),</p>
+<p class="p17">// controlled by 2nd fader and toggle</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Sines"</span>,[<span class="s11">\freq</span>,440,<span class="s11">\faderbus</span>,x.layer1(2),<span class="s11">\togglebus</span>,x.layer1(6)]),</p>
+<p class="p17">// controlled by 3rd fader and toggle</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Sines"</span>,[<span class="s11">\freq</span>,880,<span class="s11">\faderbus</span>,x.layer1(3),<span class="s11">\togglebus</span>,x.layer1(7)]),</p>
+<p class="p17">// controlled by 4th fader and 1st push</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Raw"</span>,[<span class="s11">\freq</span>,110,<span class="s11">\faderbus</span>,x.layer1(4),<span class="s11">\pushbus</span>,x.layer1(8)]),</p>
+<p class="p17">// controlled by 4th fader and 2nd push</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Raw"</span>,[<span class="s11">\freq</span>,123,<span class="s11">\faderbus</span>,x.layer1(4),<span class="s11">\pushbus</span>,x.layer1(9)]),</p>
+<p class="p17">// controlled by 4th fader and 3rd push</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Raw"</span>,[<span class="s11">\freq</span>,131,<span class="s11">\faderbus</span>,x.layer1(4),<span class="s11">\pushbus</span>,x.layer1(10)]),</p>
+<p class="p17">// controlled by 4th fader and 4th push</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Raw"</span>,[<span class="s11">\freq</span>,147,<span class="s11">\faderbus</span>,x.layer1(4),<span class="s11">\pushbus</span>,x.layer1(11)]),</p>
+<p class="p17">// controlled by 4th fader and 5th push</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Raw"</span>,[<span class="s11">\freq</span>,165,<span class="s11">\faderbus</span>,x.layer1(4),<span class="s11">\pushbus</span>,x.layer1(12)]),</p>
+<p class="p17">// controlled by xy</p>
+<p class="p14"><span class="s5">Synth</span>(<span class="s6">"TouchOSC-Dust"</span>,[<span class="s11">\xybus</span>,x.layer1(0)])];</p>
+<p class="p14">)</p>
+<p class="p15"><br></p>
+<p class="p15"><br></p>
+<p class="p17">// free synths</p>
+<p class="p14">a.do({<span class="s5">arg</span> item, i; item.free;});</p>
+<p class="p17">// close connections</p>
+<p class="p14">x.disconnect;</p>
+</body>
+</html>

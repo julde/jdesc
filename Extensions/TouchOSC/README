@@ -1,0 +1,8 @@
+To install:
+
+Copy TouchOSC.sc and TouchOSC.html to your SuperCollider extensions folder:
+
+OSX		~/Library/Application Support/SuperCollider/Extensions/
+Linux	~/share/SuperCollider/Extensions
+
+See TouchOSC_mappings.pdf for details of how each layer is mapped in the TouchOSC class.

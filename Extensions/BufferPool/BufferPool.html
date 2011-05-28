@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title></title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="949.46">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 42.0px; font: 9.0px Monaco; color: #0006bf}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
+p.p5 {margin: 0.0px 0.0px 0.0px 42.0px; font: 12.0px Helvetica}
+p.p6 {margin: 0.0px 0.0px 0.0px 42.0px; font: 12.0px Helvetica; min-height: 14.0px}
+p.p7 {margin: 0.0px 0.0px 0.0px 42.0px; font: 9.0px Monaco}
+p.p8 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 14.0px Helvetica}
+p.p9 {margin: 0.0px 0.0px 0.0px 57.0px; text-indent: -57.0px; font: 14.0px Helvetica; min-height: 17.0px}
+p.p10 {margin: 0.0px 0.0px 0.0px 0.0px}
+p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px Monaco; color: #c90000}
+span.s1 {font: 18.0px Helvetica}
+span.s2 {color: #000000}
+span.s3 {color: #0000bf}
+span.s4 {color: #606060}
+span.s5 {color: #0006bf}
+span.s6 {color: #0019b3}
+span.s7 {color: #33721f}
+span.s8 {font: 12.0px Helvetica}
+span.s9 {font: 12.0px Helvetica; color: #000000}
+span.s10 {color: #00750c}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>BufferPool<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></b></span><b>buffer management GUI</b></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">BufferPool provides an easy way to load and organise soundfile buffers. Any number of files can be loaded and saved to disk as a pool (the paths not the soundfiles) . Furthermore collections of pools can be saved as presets. The settings are stored in preferences/ pools.bpl and presets.bpl respectively. Buffers are allocated when a pool is loaded and freed when removed. Currently when a soundfile appears in more than one place (in different pools), it is allocated a different buffer.</p>
+<p class="p2"><br></p>
+<p class="p1">Use at own risk. This class has not been extensively tested, so I wouldn't recommend over-depending on it for organising complicated projects yet. Organise your soundfiles in folders as well, so that you can easily reload them and always backup the .bpl files.</p>
+<p class="p2"><br></p>
+<p class="p1">To run:</p>
+<p class="p2"><br></p>
+<p class="p3">BufferPool<span class="s2">.new;</span></p>
+<p class="p2"><br></p>
+<p class="p4"><b>Class Methods</b></p>
+<p class="p2"><br></p>
+<p class="p1"><b>*instance</b></p>
+<p class="p5">Returns the instance of BufferPool. Only one instance can exist at a time.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*bounds(a Rect)</b></p>
+<p class="p5">Set the position of the window.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*backgroundColor_(a Color)</b></p>
+<p class="p5">Set the background Color.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*buttonColor_(a Color)</b></p>
+<p class="p5">Set the buttons Color.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*buttonTextColor_(a Color)</b></p>
+<p class="p5">Set the button text Color.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*listsColor_(a Color)</b></p>
+<p class="p5">Set the list background Color.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*textBoxColor_(a Color)</b></p>
+<p class="p5">Set the Color for the text box.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>*editor_(a String)</b></p>
+<p class="p5">Set a program to open the soundfile on double click. Assumes that the program is in the Applications folder.<span class="Apple-converted-space"> </span></p>
+<p class="p5">Default is "QuickTime Player"</p>
+<p class="p6"><br></p>
+<p class="p7"><span class="s3">BufferPool</span>.editor_(<span class="s4">"Wave Editor"</span>); //set Wave Editor</p>
+<p class="p2"><br></p>
+<p class="p4"><b>Instance Methods</b></p>
+<p class="p2"><br></p>
+<p class="p1"><b>get(a Symbol)</b></p>
+<p class="p5">Get the List containing the buffers of a pool.</p>
+<p class="p6"><br></p>
+<p class="p1"><b>bounds</b></p>
+<p class="p5">Post the current position of the window.</p>
+<p class="p6"><br></p>
+<p class="p7"><span class="s5">BufferPool</span>.instance.bounds;</p>
+<p class="p6"><br></p>
+<p class="p1"><b>currentPools</b></p>
+<p class="p5">Posts the current pools formated to copy and paste in your code.</p>
+<p class="p6"><br></p>
+<p class="p7"><span class="s5">BufferPool</span>.instance.currentPools;</p>
+<p class="p6"><br></p>
+<p class="p1"><b>loadPreset(a Symbol)</b></p>
+<p class="p5">Load a preset by name. Put it in your startup file to have your project ready to go.</p>
+<p class="p2"><br></p>
+<p class="p7"><span class="s6">BufferPool</span>.instance.loadPresets(<span class="s7">'name'</span>);</p>
+<p class="p2"><br></p>
+<p class="p8"><b>Examples</b></p>
+<p class="p9"><br></p>
+<p class="p10"><span class="s8"><img src="attachments/BufferPool/Picture 3.png" alt="attachments/BufferPool/Picture 3.png"></span></p>
+<p class="p2"><br></p>
+<p class="p1">Add file(s) at the buffers menu (1) will open a dialog to choose the soundfiles. The soundfiles can then be saved as a pool which will cause the actual buffers to be allocated. At this point you can access a pool by name:</p>
+<p class="p2"><br></p>
+<p class="p11"><span class="s9"><span class="Apple-converted-space"> </span></span><span class="s5">BufferPool</span><span class="s2">.instance.get(</span><span class="s10">'iceCrack'</span><span class="s2">); </span>//will return the List of buffers</p>
+<p class="p11"><span class="s9"><span class="Apple-converted-space"> </span></span><span class="s5">BufferPool</span><span class="s2">.instance.get(</span><span class="s10">'iceCrack'</span><span class="s2">)[0]; </span>//will return the buffer at Ice_crack_01.wav</p>
+<p class="p2"><br></p>
+<p class="p1">All pools you have created can be accessed and loaded using load at the pools menus (2). To create a new pool use clear to empty the buffer list (only in appearence. The buffers are still there) and add the new files. If you dont use clear you can add or remove files to an existing pool but the changes will have effect only when you press overwrite (2).<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1">Finally you can save a collection of pools as a preset by pressing new (3) and choosing a name. Again any changes you make to the current pool will not be saved untill you press overwrite (3).</p>
+<p class="p2"><br></p>
+<p class="p1">Tip: double click on a soundfile name to open it with your favourite program (See *editor_() class mehod).<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+</body>
+</html>

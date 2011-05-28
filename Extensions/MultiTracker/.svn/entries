@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="75"
+   name=""
+   committed-date="2007-11-15T12:21:13.459904Z"
+   url="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips/MultiTracker"
+   last-author="falkenst"
+   kind="dir"
+   uuid="73e6543a-bbc6-4ead-975d-0d4c7f83c857"
+   repos="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips"
+   revision="75"/>
+<entry
+   name="help"
+   kind="dir"/>
+<entry
+   name="classes"
+   kind="dir"/>
+<entry
+   committed-rev="1"
+   name="._.DS_Store"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="3e4f964f473e96e3a3b1ece396cfd823"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+</wc-entries>

@@ -1,0 +1,78 @@
+# Jamfile for configuration Debug of target "Headers" of project "JNITablet"
+
+
+JAVAC_SOURCE_FILE_ENCODING default = MacRoman ;
+
+# Implicitly computed project-wide settings for project "JNITablet"
+export deferred ANTICIPATED_BUILT_PRODUCTS_DIR = $(CONFIGURATION_BUILD_DIR) ;
+export deferred ANTICIPATED_TARGET_BUILD_DIR = $(CONFIGURATION_BUILD_DIR) ;
+export deferred BUILD_STYLE = "$(CONFIGURATION)" ;
+export deferred CONFIGURATION = Debug ;
+export deferred CONFIGURATION_BUILD_DIR = $(BUILD_DIR) ;
+export deferred CONFIGURATION_TEMP_DIR = $(PROJECT_TEMP_DIR) ;
+export deferred DEVELOPMENT_LANGUAGE = English ;
+export deferred GROUP = rutz ;
+export deferred PROJECT = $(PROJECT_NAME) ;
+export deferred PROJECT_DIR = /Users/rutz/Documents/workspace/SwingOSC/JNITablet ;
+export deferred PROJECT_FILE_PATH = /Users/rutz/Documents/workspace/SwingOSC/JNITablet/JNITablet.xcodeproj ;
+export deferred PROJECT_NAME = JNITablet ;
+export deferred PROJECT_TEMP_DIR = $(OBJROOT)/$(PROJECT_NAME).build ;
+export deferred SRCROOT = /Users/rutz/Documents/workspace/SwingOSC/JNITablet ;
+export deferred TARGET_TEMP_DIR = $(CONFIGURATION_TEMP_DIR)/$(TARGET_NAME).build ;
+export deferred TEMP_DIR = $(TARGET_TEMP_DIR) ;
+export deferred USER = rutz ;
+
+# Project-wide settings for project "JNITablet"
+export deferred ARCHS = ppc i386 ;
+export deferred SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk ;
+export deferred ZERO_LINK = NO ;
+
+# User-defined project-wide settings for project "JNITablet"
+
+# Build Settings for target "Headers"
+
+# Implicitly computed build settings for target "Headers"
+export deferred CLONE_HEADERS = NO ;
+export deferred CONFIGURATION_BUILD_DIR = $(BUILD_DIR) ;
+export deferred CONFIGURATION_TEMP_DIR = $(PROJECT_TEMP_DIR) ;
+export deferred SKIP_INSTALL = YES ;
+export deferred TARGETNAME = $(TARGET_NAME) ;
+export deferred TARGET_NAME = Headers ;
+
+# User-defined build settings for target "Headers"
+export deferred COPY_PHASE_STRIP = NO ;
+export deferred GCC_DYNAMIC_NO_PIC = NO ;
+export deferred GCC_ENABLE_FIX_AND_CONTINUE = YES ;
+export deferred GCC_GENERATE_DEBUGGING_SYMBOLS = YES ;
+export deferred GCC_OPTIMIZATION_LEVEL = 0 ;
+export deferred PRODUCT_NAME = Headers/TabletWrapper.h ;
+export deferred REZ_EXECUTABLE = YES ;
+export deferred ZERO_LINK = YES ;
+
+# Target "Headers"
+
+ConditionalDefinitions _ ;
+commitdeferred ;
+
+
+BeginLibrary "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" ;
+
+# Sources
+SOURCES = ;
+ProcessSources "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" : "$(SOURCES)" : "" : BPTag000 ;
+
+# Script Build Phase Files
+SCRIPT_BUILD_PHASE_FILES = "$(TARGET_TEMP_DIR)/BPTag001-script.sh" ;
+ProcessScriptBuildPhaseFiles "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" : "$(SCRIPT_BUILD_PHASE_FILES)" : BPTag000 : BPTag001 ;
+
+# Java Resource Files
+JAVA_RESOURCE_FILES = ;
+ProcessJavaResourceFiles "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" : "$(JAVA_RESOURCE_FILES)" : BPTag001 : BPTag002 ;
+
+# Frameworks & Libraries
+FRAMEWORKS_AND_LIBRARIES = ;
+ProcessFrameworksAndLibraries "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" : "$(FRAMEWORKS_AND_LIBRARIES)" : BPTag002 : BPTag003 ;
+
+include $(TEMP_DIR)/HeaderDependencies.jam ;
+EndLibrary "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" ;
+

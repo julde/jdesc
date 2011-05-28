@@ -1,0 +1,108 @@
+# Jamfile for configuration Debug of target "TabletWrapper" of project "JNITablet"
+
+
+JAVAC_SOURCE_FILE_ENCODING default = MacRoman ;
+
+# Implicitly computed project-wide settings for project "JNITablet"
+export deferred ANTICIPATED_BUILT_PRODUCTS_DIR = $(CONFIGURATION_BUILD_DIR) ;
+export deferred ANTICIPATED_TARGET_BUILD_DIR = $(CONFIGURATION_BUILD_DIR) ;
+export deferred BUILD_STYLE = "$(CONFIGURATION)" ;
+export deferred CONFIGURATION = Debug ;
+export deferred CONFIGURATION_BUILD_DIR = $(BUILD_DIR) ;
+export deferred CONFIGURATION_TEMP_DIR = $(PROJECT_TEMP_DIR) ;
+export deferred DEVELOPMENT_LANGUAGE = English ;
+export deferred GROUP = rutz ;
+export deferred PROJECT = $(PROJECT_NAME) ;
+export deferred PROJECT_DIR = /Users/rutz/Documents/workspace/SwingOSC/JNITablet ;
+export deferred PROJECT_FILE_PATH = /Users/rutz/Documents/workspace/SwingOSC/JNITablet/JNITablet.xcodeproj ;
+export deferred PROJECT_NAME = JNITablet ;
+export deferred PROJECT_TEMP_DIR = $(OBJROOT)/$(PROJECT_NAME).build ;
+export deferred SRCROOT = /Users/rutz/Documents/workspace/SwingOSC/JNITablet ;
+export deferred TARGET_TEMP_DIR = $(CONFIGURATION_TEMP_DIR)/$(TARGET_NAME).build ;
+export deferred TEMP_DIR = $(TARGET_TEMP_DIR) ;
+export deferred USER = rutz ;
+
+# Project-wide settings for project "JNITablet"
+export deferred ARCHS = ppc i386 ;
+export deferred SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk ;
+export deferred ZERO_LINK = NO ;
+
+# User-defined project-wide settings for project "JNITablet"
+
+# Build Settings for target "TabletWrapper"
+
+# Implicitly computed build settings for target "TabletWrapper"
+export deferred CLONE_HEADERS = NO ;
+export deferred CONFIGURATION_BUILD_DIR = $(BUILD_DIR) ;
+export deferred CONFIGURATION_TEMP_DIR = $(PROJECT_TEMP_DIR) ;
+export deferred SKIP_INSTALL = YES ;
+export deferred TARGETNAME = $(TARGET_NAME) ;
+export deferred TARGET_NAME = TabletWrapper ;
+
+# User-defined build settings for target "TabletWrapper"
+export deferred COPY_PHASE_STRIP = NO ;
+export deferred DYLIB_COMPATIBILITY_VERSION = 1 ;
+export deferred DYLIB_CURRENT_VERSION = 1 ;
+export deferred GCC_DYNAMIC_NO_PIC = NO ;
+export deferred GCC_ENABLE_FIX_AND_CONTINUE = YES ;
+export deferred GCC_GENERATE_DEBUGGING_SYMBOLS = YES ;
+export deferred GCC_OPTIMIZATION_LEVEL = 0 ;
+export deferred JAVAC_SOURCE_FILE_ENCODING = UTF-8 ;
+export deferred JAVA_ARCHIVE_COMPRESSION = NO ;
+export deferred JAVA_ARCHIVE_TYPE = JAR ;
+export deferred JAVA_COMPILER = /usr/bin/javac ;
+export deferred JAVA_COMPILER_DEPRECATED_WARNINGS = YES ;
+export deferred JAVA_COMPILER_SOURCE_VERSION = 1.4 ;
+export deferred JAVA_COMPILER_TARGET_VM_VERSION = 1.4 ;
+export deferred JAVA_MANIFEST_FILE = Manifest ;
+export deferred JAVA_SOURCE_SUBDIR = . ;
+export deferred LIBRARY_STYLE = STATIC ;
+export deferred OTHER_CFLAGS =  ;
+export deferred OTHER_LDFLAGS =  ;
+export deferred OTHER_LIBTOOL_FLAGS =  ;
+export deferred OTHER_REZFLAGS =  ;
+export deferred PRODUCT_NAME = TabletWrapper ;
+export deferred PURE_JAVA = YES ;
+export deferred REZ_EXECUTABLE = YES ;
+export deferred SECTORDER_FLAGS =  ;
+export deferred WARNING_CFLAGS = -Wmost -Wno-four-char-constants -Wno-unknown-pragmas ;
+export deferred ZERO_LINK = YES ;
+
+# Target "TabletWrapper"
+
+ConditionalDefinitions _ ;
+commitdeferred ;
+
+
+BeginLibrary "<TabletWrapper>TabletWrapper" ;
+
+# Sources
+src/com/jhlabs/jnitablet/TabletEvent.java_JAVA_IMPORTS = "" ;
+src/com/jhlabs/jnitablet/TabletEvent.java_MAIN_CLASS = com/jhlabs/jnitablet/TabletEvent.class ;
+src/com/jhlabs/jnitablet/TabletListener.java_JAVA_IMPORTS = /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletEvent.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletProximityEvent.java ;
+src/com/jhlabs/jnitablet/TabletListener.java_MAIN_CLASS = com/jhlabs/jnitablet/TabletListener.class ;
+src/com/jhlabs/jnitablet/TabletProximityEvent.java_JAVA_IMPORTS = "" ;
+src/com/jhlabs/jnitablet/TabletProximityEvent.java_MAIN_CLASS = com/jhlabs/jnitablet/TabletProximityEvent.class ;
+src/com/jhlabs/jnitablet/TabletWrapper.java_JAVA_IMPORTS = /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletListener.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletProximityEvent.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletEvent.java ;
+src/com/jhlabs/jnitablet/TabletWrapper.java_MAIN_CLASS = com/jhlabs/jnitablet/TabletWrapper.class ;
+src/TabletTest.java_JAVA_IMPORTS = /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletEvent.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletProximityEvent.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletListener.java /Users/rutz/Documents/workspace/SwingOSC/JNITablet/src/com/jhlabs/jnitablet/TabletWrapper.java ;
+src/TabletTest.java_MAIN_CLASS = TabletTest.class ;
+SOURCES =
+	src/com/jhlabs/jnitablet/TabletEvent.java
+	src/com/jhlabs/jnitablet/TabletListener.java
+	src/com/jhlabs/jnitablet/TabletProximityEvent.java
+	src/com/jhlabs/jnitablet/TabletWrapper.java
+	src/TabletTest.java ;
+ProcessSources "<TabletWrapper>TabletWrapper" : "$(SOURCES)" : "" : BPTag000 ;
+
+# Java Resource Files
+JAVA_RESOURCE_FILES = ;
+ProcessJavaResourceFiles "<TabletWrapper>TabletWrapper" : "$(JAVA_RESOURCE_FILES)" : BPTag000 : BPTag001 ;
+
+# Frameworks & Libraries
+FRAMEWORKS_AND_LIBRARIES = ;
+ProcessFrameworksAndLibraries "<TabletWrapper>TabletWrapper" : "$(FRAMEWORKS_AND_LIBRARIES)" : BPTag001 : BPTag002 ;
+
+include $(TEMP_DIR)/HeaderDependencies.jam ;
+EndLibrary "<TabletWrapper>TabletWrapper" ;
+

@@ -1,0 +1,309 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf420
+{\fonttbl\f0\fswiss\fcharset77 Helvetica;\f1\fnil\fcharset77 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue191;\red0\green115\blue0;\red96\green96\blue96;
+\red191\green0\blue0;\red67\green108\blue29;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\fs48 \cf2 MultiTracker\cf0 \
+ \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\fs24 \cf0 superclass: 	[Object]\
+related:		[MTrack] [MultiTrackObject] [Synthi]\
+version:		1.0 (Aug06)\
+author:		Jan Tr\'9ftzschler (info[at]sampleAndHold[dot]org) \
+This version includes a modified version of Lance Putnam's SCEnvelopeEdit (SCEnvelopeEdit2).\
+\
+A Multitracker with a graphical represenation.\
+Important: To work properly all SynthDefs need to be stored in SynthDescLib.global. \
+Call SynthDescLib.global.read; before.\
+\
+\
+methods:\
+	\
+	*new(name, server, clock)\
+		note: clock is not supported currently. The global TempoClock is used. Take this into account when changing its tempo.\
+\
+instance methods:\
+\
+	name \
+	\
+	put(tracknum, time, duration, obj, args);\
+	\
+		excepted objects:\
+			Symbol: 	creates a Synthi with args\
+			String:	a Path to a soundfile to play with a DiskIn, uses a SoundFileHDSynthi\
+					buffers are acllocated internally. Not usable with Score right now.\
+			Pbind:	plays the pattern\
+			Function:	execute the Function with \{|multiTrackObject, \\start| \} \
+					and \{|multiTrackObject, \\start| stop\}\
+			Event: 	calls .play and .stop on it\
+	\
+	prepareForPlay(startTime, stopTime, prepareObjects)\
+		prepareObjects: if true then all objects are prepared for playing. \
+			This is useful when playing soundfiles, because then all buffers will be allocated already.\
+	\
+	play(startTime, stopTime, quant)\
+	\
+	asScore\
+		returns a Score\
+		\
+	asArrayCompileString\
+		returns a user-friendly Compile-String of an array of tracks\
+		\
+	tracks\
+		returns an Array of MTracks used by the MultiTracker\
+	gui\
+		show the graphical interface. \
+		Note: sometimes the interface still gets a bit buggy. close it and re-open with .gui.\
+		it is possible to colorize objects with drag and drop from the ColorBrowser.new .\
+		You can open a MultiTrackMoviePlayer and sync it to the MultiTracker.\
+	\
+gui-keys/ actions\
+	(key action will be tweakable in the next version, undo is also on its way: z, copy and paste might work: c/v)\
+	note: to set the startTime: use the timeline on top. the time cursor on mouse over is for setting the time for dragged-in object only for now.\
+\
+	global:		spacebar:		play/stop\
+				\
+	on timegrid:	arrow up/down:	zoomIn/Out\
+				o: open soundfile\
+				p: document with compileString, a way to make back-ups\
+				r: record\
+				<: move to the beginning\
+				=: zoom all out\
+				\
+	on object		e: open Editor Window \
+					- map a Synth's arg to an Envelope, Bus or set its value\
+					- display and edit an Env\
+					- display data of a Pbind (still under construction ...)\
+					\
+				i: inspect object (mainly for debugging)\
+				arrow left/right: 		move object on time axis\
+				arrow up/down:	move object to another track\
+				[ :	move object to the time-cursor\
+				] :	shorten or lengthen the duration of the object to the time-cursor\
+				click drag in on the first 2/3 of the object moves it, at the end changes it length\
+				(not in Envelope mode)\
+				w : show wave form\
+				s: split at the time position	(does not split envelopes until now, but it's on its way ...)\
+				c: copy (might be buggy)\
+				v: paste (might be buggy)\
+				shift-click: select multiple objects, shift drag: move multiple selected objects\
+\
+	grid_ 		set a timegrid in seconds (default is 0.1)\
+	snapTpGrid_	tell the gui editor to snap to the grid\
+	currentTime	get the current time\
+	pixelPerSecond \
+\
+examples:\
+\
+SynthDescLib.global.read;\
+\
+(\
+m = \cf2 MultiTracker\cf0 (\cf3 \\new\cf0 );\
+m.put(0, 0, 10, \cf3 \\default\cf0 , [\cf3 \\freq\cf0 , \cf2 Env\cf0 ([200,400, 800, 100],[2, 5, 3], [\cf3 \\lin\cf0 , \cf3 \\exp\cf0 , \cf3 \\exp\cf0 ])]);\
+m.put(1, 2, 3, #\{\cf2 |obj, what|\cf0  what.postln\});\
+m.put(2, 5, 3, \cf2 Pbind\cf0 (\cf3 \\dur\cf0 , \cf2 Pxrand\cf0 ([1/4,1/8,1/16], \cf2 inf\cf0 ), \cf3 \\freq\cf0 , \cf2 Pseries\cf0 (100, 2, 300)).staticMaxDur(20)
+\f1\fs18 )
+\f0\fs24 ;\
+m.put(3, 3, 20, \cf2 Pbind\cf0 (\cf3 \\dur\cf0 , \cf2 Pn\cf0 (1,\cf2 inf\cf0 ), \cf3 \\freq\cf0 , \cf2 Pwhite\cf0 (40, 52, 300)).static(20));\
+m.put(4, 5.1, 3, \cf4 "! I am a coment"\cf0 );\
+m.gui;\
+)\
+\
+(\
+SynthDescLib.global.read;\
+m = \cf2 MultiTracker\cf0 (\cf3 \\new\cf0 );\
+m.putSoundFile("/Users/falkenst/projects/bausteine/bausteine_II/st_bufread_fft_2.aif");\
+m.play;\
+m.gui;\
+)\
+\
+m.put(0, 0, 1, \cf3 \\default\cf0 , [\cf3 \\freq\cf0 , 220]);\
+\
+m.play(0,2);\
+\
+//clocks issues in 
+\f1\fs18 \cf2 SynthiMultiTrackObject
+\f0\fs24 \cf0 \
+(\
+\
+\
+	m = \cf2 MultiTracker\cf0 (\cf3 \\new\cf0 );\
+	m.
+\f1\fs18 prepareLatency_(0);
+\f0\fs24 \
+\cf5 //	m.put(1, 0, 3, #\{|obj, what|  Synth(\\default)\});\cf0 \
+	m.put(1, 0, 0.5, \\default, (\\freq: 220));\
+	m.put(1, 0.2, 0.3, \\default);\
+	m.put(1, 0.1, 0.1, \\default);\
+\
+	m.loop(0.5,0.1);\
+	\
+)\
+m.stop;\
+m.play(3,1)\
+//	m.put(1, 0, 3, Pfindur(1, Pmono(\\default, 
+\f1\fs18 \cf6 \\dur\cf0 , 0.2
+\f0\fs24 )));\
+\
+m.gui;\
+m.play;\
+m.tracks[0].
+\f1\fs18 data.array[2].play;
+\f0\fs24 \
+m.tracks[0].
+\f1\fs18 data.array[2].stop;
+\f0\fs24 \
+m.tracks[0].mute;\
+m.tracks[0].unmute;\
+\
+m.stop;\
+// you can drag synthdefs from the browser direclty:\
+SynthDescLib.global.browse;\
+\
+// mute a track:\
+m.tracks[0].mute;\
+m.tracks[0].unmute;\
+\
+//hide tracks:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 m.tracks[2].guiOptions.visible_(false);\
+m.tracks[2].guiOptions.visible_(true);\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf0 m.tracks[2].guiOptions.background_(Color.green);\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\
+//as MultiTrackObject\
+m.play;\
+//loop does not work yet :(\
+m.loop(4, 2);\
+//put an audioFile\
+m.put(1,1, 10, "sounds/a11wlk01-44_1.aiff", [\\startFrame, 44100]);\
+m.put(1,1, 10, "sounds/a11wlk01-44_1.aiff");\
+\
+//a shortcut (arg order might change):\
+m.putSoundFile(path, tracknum, time, duration)\
+\
+m.gui\
+todo: split envelopes, change duration for extra views!\
+\
+//access objects without gui:\
+//data, an IdentitySet,
+\f1\fs18 ,
+\f0\fs24 might be not sorted by time. \
+m.tracks[0].data.asArray[0].inspect;\
+//so get it as a PriorityQueue\
+m.tracks[0].asPriorityQueue.pop;\
+\
+A bit more readable form of a text representation:\
+\
+(\
+m.asArrayCompileString;\
+\
+)\
+\
+(\
+[\
+[0,10, \\default]\
+].asMultiTracker.gui;\
+)\
+\
+//or specify the tracknum as well\
+(\
+[\
+[2, 0,10, \\default]\
+].asMultiTracker.gui;\
+)\
+//or (recommened) each track is represented by an array too:\
+(\
+d = \
+[\
+	[\
+		[0, 20, "! Comment"]\
+	],\
+	[\
+		[0, 20, "! Com,ment"]\
+	]\
+];\
+m = d.asMultiTracker;\
+m.gui;
+\f1\fs18 \
+)\
+
+\f0\fs24 \
+Create a score of this MultiTrack:\
+\
+m.asScore;\
+\
+\
+//split:\
+\
+m = MultiTracker(\\new);\
+m.put(0, 0, 10, \\default, [\\freq, Env([200,400, 800, 100],[2, 5, 3])]);\
+m.split(m.tracks[0]
+\f1\fs18 [0], 1);
+\f0\fs24 \
+m.gui;\
+\
+//soundfile\
+m = MultiTracker(\\new);\
+m.put(0, 0, 10,"sounds/a11wlk01-44_1.aiff");\
+m.split(m.tracks[0]
+\f1\fs18 [0], 1);
+\f0\fs24 \
+m.gui;\
+\
+// to do:\
+- play tracks on separate Groups\
+- add volume Synth on tail of each group (track) as an option\
+- Event asScore integration\
+- fix bugs scrolling etc..\
+- write a better example !\
+- show/set value of envelope point (broken)\
+- Event editor ?\
+- switch all to Event style ?\
+- write help files for other classes ..\
+- change time grid gui to SCSoundFileView include looping\
+- fix looping\
+- implement recording (kr, ar, keyboard, hid, midi)\
+- add midi?\
+\
+\
+\pard\pardeftab560\ql\qnatural
+
+\f1 \cf0 p = PriorityQueue.new;\
+p.put(0, Pmono( \\default, \\freq, 110, \\dur, Pseq([1])));\
+p.put(2, Pmono( \\default, \\freq, 110, \\dur, Pseq([1])));\
+p.
+\fs18 asPattern.asCompileString\
+
+\fs24 p.
+\fs18 asPattern.play\
+\
+
+\fs24 (\\instrument: \\default, \\freq: 110, 
+\fs18 dur
+\fs24 : 1).synthi.play\
+\
+\
+MultiTracker:\
+\
+support for patterns:\
+asPtpar\
+drop symbols -> Pmono\
+Pmono for soundfiles?\
+_. base evrything on Patterns !\
+a track is a Pdef containing a Ptpar (->  set names for tracks)\
+a multitracker is a Ppar containg Pdefs\
+\
+\
+(\
+\
+)
+\f0 \
+}

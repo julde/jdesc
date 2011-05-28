@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="75"
+   name=""
+   committed-date="2007-11-15T12:21:13.459904Z"
+   url="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips/MultiTracker/classes/MultiTrackGui"
+   last-author="falkenst"
+   kind="dir"
+   uuid="73e6543a-bbc6-4ead-975d-0d4c7f83c857"
+   repos="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips"
+   revision="75"/>
+<entry
+   committed-rev="61"
+   name="MultiTrackObjectGui.sc"
+   text-time="2007-11-01T10:38:39.000000Z"
+   committed-date="2007-10-31T12:01:36.474621Z"
+   checksum="be3f972f54b1b660969f6e4fe6b85e36"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-01T10:38:38.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._CommentMultitrackObjectGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackerWindow.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackerControlGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="2d8aac17f9f6178205839ff22b0516fc"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="SoundFileViewData.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="66704e55b6f495c42913646a0bc0e9dc"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MTrackGuiOptions.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._TrackLayout.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="61"
+   name="MultiTrackGuiControl.sc"
+   text-time="2007-11-01T10:38:39.000000Z"
+   committed-date="2007-10-31T12:01:36.474621Z"
+   checksum="378b5cd002122976bafc2db6fee34d50"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-01T10:38:39.000000Z"/>
+<entry
+   committed-rev="69"
+   name="MTrackGui.sc"
+   text-time="2007-11-10T11:16:49.000000Z"
+   committed-date="2007-11-09T15:18:42.926376Z"
+   checksum="8128f81743fb0251b917a18252188483"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-10T11:16:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="PbindMultiTrackObjectGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="d4ac8e4825af1b799d941881bbe1de7a"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackObjectArgsGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f9b2b0dce5195f643d8715ea400a9061"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackObjectGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackerControlGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._SoundFileViewData.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackMoviePlayer.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="c62f7c0d8111444e46bdaa6d14eea220"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="TrackRow.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="188d7355e093e05532af44614e700326"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="CommentMultitrackObjectGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="4b07533b937c0cef63bff91abd3e0fb0"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="75"
+   name="MultiTrackerWindow.sc"
+   text-time="2007-11-15T12:22:29.000000Z"
+   committed-date="2007-11-15T12:21:13.459904Z"
+   checksum="bcd61c91466cd03df40a31e4de69cae5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:22:29.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackGuiControl.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MTrackGuiOptions.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="9447c9bb520f284ea2f9b58bd5c14afe"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="58"
+   name="TrackLayout.sc"
+   text-time="2007-11-01T10:38:39.000000Z"
+   committed-date="2007-10-29T11:03:03.496464Z"
+   checksum="d28d795851d610ff59c2017e1f30b3d6"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-01T10:38:39.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MTrackGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._PbindMultiTrackObjectGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackObjectArgsGui.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="74"
+   name="MultiTrackToolsGui.sc"
+   text-time="2007-11-15T12:09:10.000000Z"
+   committed-date="2007-11-15T11:40:04.097337Z"
+   checksum="3f6cc92ea3dbaefc867a68d0783a5416"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-15T12:09:10.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._TrackRow.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackMoviePlayer.sc"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._.DS_Store"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="3e4f964f473e96e3a3b1ece396cfd823"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+</wc-entries>

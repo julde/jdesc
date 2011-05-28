@@ -1,0 +1,6 @@
+rule DefineHeaderDependencies
+{
+}
+
+DefineHeaderDependencies "<Headers/TabletWrapper.h>Headers/TabletWrapper.h" ;
+

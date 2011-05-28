@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="67"
+   name=""
+   committed-date="2007-11-09T14:40:38.235913Z"
+   url="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips/MultiTracker/help"
+   last-author="falkenst"
+   kind="dir"
+   uuid="73e6543a-bbc6-4ead-975d-0d4c7f83c857"
+   repos="svn://80.190.139.155/web/sampleAndHold/svn/svnroot/tea_lips"
+   revision="75"/>
+<entry
+   committed-rev="1"
+   name="._MTrack.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="178982ab06417dda486d88e2f0948a78"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="66"
+   name="MultiTrackSoundFilePlayer.rtf"
+   text-time="2007-11-09T10:47:56.000000Z"
+   committed-date="2007-11-09T09:37:40.457325Z"
+   checksum="a8b2d76b4f1e301ad426afd87b0dac6b"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-09T10:47:56.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._ColorBrowser.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="51237348513a00f01206c560d54c7ef5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MultiTrackObject.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="1e97627ceaef227334ca6a3d04aef977"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="MTrack.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="9228cfb9af907be1828562c7b7e19311"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="ColorBrowser.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="0c1119a8e464575f489240778c0b14e5"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTracker.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="f3b9618c21422717a834147b7d110dfb"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="3"
+   name="MultiTracker.help.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-20T19:47:53.790595Z"
+   checksum="eb8c6fd5fddf444ba4d681608a1eb12a"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="67"
+   name="MultiTrackSoundFile.help.rtf"
+   text-time="2007-11-10T11:16:49.000000Z"
+   committed-date="2007-11-09T14:40:38.235913Z"
+   checksum="d9b33d75c794c021d8a08e55cc65b2af"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-10T11:16:49.000000Z"/>
+<entry
+   committed-rev="67"
+   name="MultiTrackSoundFilePool.rtf"
+   text-time="2007-11-10T11:16:49.000000Z"
+   committed-date="2007-11-09T14:40:38.235913Z"
+   checksum="cdf534d6dbae9dddd4d88ca484c0b054"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-11-10T11:16:49.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._.DS_Store"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="96c68b79bc82b883258762468d5a38a3"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+<entry
+   committed-rev="1"
+   name="._MultiTrackObject.rtf"
+   text-time="2007-09-28T08:10:43.000000Z"
+   committed-date="2007-08-09T13:44:20.946583Z"
+   checksum="178982ab06417dda486d88e2f0948a78"
+   last-author="falkenst"
+   kind="file"
+   prop-time="2007-09-28T08:10:43.000000Z"/>
+</wc-entries>

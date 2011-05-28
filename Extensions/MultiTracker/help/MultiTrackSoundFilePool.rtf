@@ -1,0 +1,68 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf420
+{\fonttbl\f0\fnil\fcharset77 Monaco;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue191;\red0\green0\blue0;\red96\green96\blue96;
+\red191\green0\blue0;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f0\fs18 \cf2 MultiTrackSoundFilePool\cf3 \
+\
+see also \cf2 MultiTrackSoundFile\cf3 \
+\
+\
+\
+z =\cf2 MultiTrackSoundFilePool\cf3 .new;\
+z.readDirectory(\cf4 "/Users/falkenst/projects/bausteine/bausteine_II/*"\cf3 );\
+z.names;\
+z.paths[0];\
+z['\cf0 st_bufread_fft_3.aif'\cf3 ].startTime_(1);\
+\cf0 z.paths[0];\cf3 \
+\pard\pardeftab720\ql\qnatural
+\cf3 \
+~cueIntro =\'ca \cf4 "/Users/falkenst/projects/bausteine/bausteine_II/*"\cf3 .pathMatch;\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf3 \
+\pard\pardeftab720\ql\qnatural
+\cf3 ~mtsf = ~cueIntro.collect\{ \cf2 |path, i|\cf3 \'ca \cf2 MultiTrackSoundFile\cf3 .openReadAndClose(path);\'ca\};\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+\cf3 \
+\
+z = \cf2 MultiTrackSoundFilePool\cf3 .new;\
+z.add(\cf2 MultiTrackSoundFile\cf3 .openReadAndClose(\cf4 "/Users/falkenst/Library/Application Support/SuperCollider/Extensions/tea_lips/MultiTracker/help/MTrack.help.rtf"\cf3 ));\
+z.names\
+\
+~mtsf [1].path\
+\
+p = \cf4 "/Users/falkenst/projects/bausteine/bausteine_II/*"\cf3 ;\
+p.dirname;\
+(\
+\cf2 var\cf3  pos=0, rel, relPath = \cf4 "/"\cf3 , checkFor, checkForLoc, splitPath;\
+p = \cf4 "/Users/falkenst/projects/bausteine/bausteine_II/st_bufread_fft_3.aif"\cf3 ;\
+rel = \cf4 "/Users/falkenst/projects"\cf3 ;\
+if(rel.last == $/)\{rel = rel.copyRange(0,z.size-2)\};\
+\
+splitPath = p.split;\
+checkFor = rel.split;\
+if(rel.last ==  $/)\{checkForLoc = checkFor.size-1\}\{checkForLoc = checkFor.size-2\};\
+checkFor = checkFor[checkForLoc.postln];\
+splitPath.do\{\cf2 |it, i|\cf3 \
+	if(it == checkFor)\
+	\{\
+		pos = i+1; \cf5 // actually is the next index we need\cf3 \
+	\}\
+\};\
+pos = pos + 1; \cf5 // first index is an empty string because of the / sign\cf3 \
+splitPath = splitPath.copyRange(pos+1, p.size-1);\
+splitPath.do\{\cf2 |it, i|\cf3 \
+	relPath = relPath ++ it;\
+	if(i<(splitPath.size-1))\{\
+		relPath = relPath ++ \cf4 "/"\cf3 ;\
+	\}\
+\};\
+relPath.postln;\
+\
+rel  ++ relPath\
+)\
+\
+\cf4 "/Users/falkenst/projects/bausteine/bausteine_II/st_bufread_fft_3.aif"\cf3 .relativePathTo(\cf4 "/Users/falkenst/projects/"\cf3 );\
+\cf4 "bausteine_II/st_bufread_fft_3.aif"\cf3 .absolutePathTo(\cf4 "/Users/falkenst/projects/"\cf3 );\
+}

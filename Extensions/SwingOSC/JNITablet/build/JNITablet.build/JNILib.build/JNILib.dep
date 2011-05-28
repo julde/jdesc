@@ -1,0 +1,5 @@
+e17158c7163f1c45e82a956f6eee9038 44b7b96874542d170e00f36df67a7d0e ffffffffffffffffffffffffffffffff 126860 /Users/rutz/Documents/workspace/SwingOSC/JNITablet/build/libJNITablet.jnilib
+862c9b62629dad6469f9c952a8d5f3fc d6a97d1fb271a65dd8c47fd211f72213 ffffffffffffffffffffffffffffffff 61324 /Users/rutz/Documents/workspace/SwingOSC/JNITablet/build/JNITablet.build/JNILib.build/Objects-normal/i386/libJNITablet.jnilib
+b5d435348fcc50d6edd6486c8f21f746 04208b8e491f47aab4c16b8358edb691 ffffffffffffffffffffffffffffffff 58080 /Users/rutz/Documents/workspace/SwingOSC/JNITablet/build/JNITablet.build/JNILib.build/Objects-normal/ppc/libJNITablet.jnilib
+0000000049a0899f00000000000127f4 862c9b62629d57ac69f9c952a8d5da4c ffffffffffffffffffffffffffffffff 46284 /Users/rutz/Documents/workspace/SwingOSC/JNITablet/build/JNITablet.build/JNILib.build/Objects-normal/i386/JNITabletjnilib.o
+0000000049a0899f00000000000127f4 b5d435348fccaa1eedd6486c8f21def1 ffffffffffffffffffffffffffffffff 48312 /Users/rutz/Documents/workspace/SwingOSC/JNITablet/build/JNITablet.build/JNILib.build/Objects-normal/ppc/JNITabletjnilib.o
